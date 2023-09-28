@@ -1,0 +1,53 @@
+:root {
+    --main-color: rgb(33, 170, 95);
+    --accent-color: rgb(23, 122, 68);
+    --background-color: rgb(161, 237, 179);
+    --padding: 1.5rem;
+    --hidden: rgba(1, 1, 1, 0);
+}
+body {
+    font-family: sans-serif;
+    background: var(--background-color);
+}
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+  padding: var(--padding);
+  background-color: var(--main-color);
+  border: 1.5rem solid var(--accent-color);
+  margin-top: 4rem;
+  
+}
+.tool-bar-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+    font-size: 3rem;
+    color: var(--hidden);
+}
+.home-button {
+    position: fixed;
+    top: 2px;
+    padding: var(--paddings);
+}
+.home-button:hover {
+    animation-name: enlarge;
+    animation-duration: 1s;
+}
+.portal-button {
+    position: fixed;
+    top: 2px;
+    padding: var(--paddings);
+    left: 75px;
+}
+.portal-button:hover {
+    animation-name: enlarge;
+    animation-duration: 1s;
+}
+@keyframes enlarge{
+    to {
+        transform: scale(1.5);
+    }
+}
